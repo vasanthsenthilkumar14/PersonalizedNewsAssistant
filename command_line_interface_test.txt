@@ -1,0 +1,182 @@
+Welcome to the Interactive News Chatbot!
+
+Commands you can use:
+- 'trending': Show current trending topics
+- 'help': Show available commands
+- 'exit': Quit the chatbot
+
+You: help
+
+Available Commands and Features:
+------------------------------
+1. Basic Commands:
+   - 'help': Show this help message
+   - 'trending': Show current trending topics
+   - 'exit': Quit the chatbot
+
+2. News Features:
+   - Ask for news about any topic
+   - Request news summaries
+   - Get trending topics
+   - Specify number of articles (e.g., "Show me 5 articles about tech")
+
+3. Translation:
+   - Chat in any language
+   - Request translations of news
+   - Switch between languages
+
+4. Weather:
+   - Get current weather for any city
+   - Choose metric/imperial units
+
+5. Financial Data:
+   - Get commodity prices
+   - Available commodities: Gold, Silver, Copper, Platinum, Palladium,
+     Crude Oil, Brent Crude, Natural Gas
+
+Example Commands:
+- "What's the latest news about AI?"
+- "Show me the weather in Tokyo"
+- "Get gold and silver prices"
+- "Translate the last response to Spanish"
+
+You: trending
+
+Chatbot: Here are the current trending topics:
+1. Best Cyber Monday phone deals LIVE: iPhone 16, Samsung Galaxy S24, Pixel 9 biggest sales now - Tom's Guide
+2. South Korean stocks rocked in U.S. trading after martial law declared - CNBC
+3. New website shows you how much Google AI can learn from your photos - Ars Technica
+4. Missing Hawaiian woman crossed freely into Mexico, Los Angeles police say - ABC News
+5. Futures Mixed Ahead Of Jobs Data - Investor's Business Daily
+6. Democratic lieutenant governors are ‘the most diverse’ group of politicians. Are they the party’s future? - POLITICO
+7. [Removed]
+8. [Removed]
+9. Ken Martin, in DNC bid, calls for ‘massive narrative and branding project’ for Democrats - POLITICO
+10. McMillian's pick-6 helps Broncos spoil career nights by Winston and Jeudy and beat Browns 41-32 - The Associated Press
+
+You: fetch latest news in chennai
+Message: ChatCompletionMessage(content=None, role='assistant', function_call=FunctionCall(arguments='{\n  "topic": "chennai",\n  "page_size": 5\n}', name='fetch_news'), tool_calls=None, refusal=None)
+
+Chatbot: Here are the top 5 articles for 'chennai':
+1. Trump claims he can bring peace to the world. In India, many believe him 
+ Description: The world's most populous country has consistently favorable views of U.S. President-elect Trump. In a Pew Research Center poll, 42% of Indians, including 51% of men, said they had confidence in him.
+ (URL: https://www.npr.org/2024/11/15/g-s1-34174/trump-election-india-peace)
+2. Tata takes control of Pegatron's sole iPhone plant in India
+ Description: India's Tata Electronics is reportedly buying a 60 percent stake in Taiwan-based Pegatron's only India iPhone facility, strengthening Tata's position as Apple's main supplier partner in the country.Tata has reportedly bought a controlling stake in a former Pe…
+ (URL: https://appleinsider.com/articles/24/11/17/tata-takes-control-of-pegatrons-sole-iphone-plant-in-india)
+3. Anderson, 42, fails to earn IPL deal but 13-year-old signed
+ Description: England's all-time leading Test wicket-taker James Anderson is unsuccessful in his bid to get a contract in the Indian Premier League (IPL).   
+ (URL: https://www.bbc.com/sport/cricket/articles/cx2lznqkezro)
+4. Why it is so difficult to walk in Indian cities
+ Description: Citizen activists are taking unusual steps to push authorities for better pedestrian infrastructure.
+ (URL: https://www.bbc.com/news/articles/c98en7v43qzo)
+5. Chennai’s secret: How the Indian city mints world-beating chess champions
+ Description: As Gukesh Dommaraju aims to win the world championships starting Monday, a city of chess stars cheers him on.
+ (URL: https://www.aljazeera.com/features/2024/11/24/chennais-secret-how-the-indian-city-mints-world-beating-chess-champions)
+
+You: summarize article 3
+Message: ChatCompletionMessage(content=None, role='assistant', function_call=FunctionCall(arguments='{\n  "index": 3\n}', name='summarize_article_by_index'), tool_calls=None, refusal=None)
+
+Chatbot: Former England cricketer Anderson, 42, did not secure a deal in the IPL, while a 13-year-old player was signed. All-rounder Sam Curran, the most expensive player in IPL history, was picked up by his former team, Chennai Super Kings.
+You: translate in french
+Message: ChatCompletionMessage(content=None, role='assistant', function_call=FunctionCall(arguments='{\n  "target_lang": "fr"\n}', name='translate_text'), tool_calls=None, refusal=None)
+
+Chatbot: Voici le résumé :
+L'ancien joueur de cricket anglais Anderson, 42 ans, n'a pas décroché de contrat dans l'IPL, alors qu'un joueur de 13 ans a été recruté. Le polyvalent Sam Curran, le joueur le plus cher de l'histoire de l'IPL, a été repris par son ancienne équipe, les Chennai Super Kings.
+
+You: current weather in chennai
+Message: ChatCompletionMessage(content=None, role='assistant', function_call=FunctionCall(arguments='{\n  "city": "chennai"\n}', name='get_weather'), tool_calls=None, refusal=None)
+
+Chatbot: Current weather in chennai:
+🌡️ Temperature: 25.97°C
+🌡️ Feels like: 25.97°C
+💧 Humidity: 94%
+🌤️ Conditions: Mist
+💨 Wind speed: 1.03 m/s
+🕒 Last updated: 2024-12-04 22:56:27
+You: give me latest gold price in rupees
+Message: ChatCompletionMessage(content=None, role='assistant', function_call=FunctionCall(arguments='{\n  "commodities": ["Gold"],\n  "currency": "INR"\n}', name='get_commodity_prices'), tool_calls=None, refusal=None)
+
+Chatbot: 1. Current Exchange Rate: 1 USD = 74.85 INR
+
+2. Price Comparison Table:
+
+   | Commodity | Price (INR) | 24h Change |
+   |-----------|-------------------|------------|
+   | Gold | 200,328.54 | 793.31 |
+
+3. Quick Analysis:
+   - Gold has seen a slight increase in price by 0.4% in the last 24 hours.
+   - This increase translates to a change of 793.31 INR in the Indian market.
+   - No other commodities were requested for comparison.
+
+You: give me latest new about fengal cyclone
+Message: ChatCompletionMessage(content=None, role='assistant', function_call=FunctionCall(arguments='{\n  "topic": "fengal cyclone"\n}', name='fetch_and_summarize'), tool_calls=None, refusal=None)
+
+Chatbot: Here are the latest articles about 'fengal cyclone':
+
+1. [Removed]
+Apologies, but I'm unable to summarize the article as there's no content provided.
+
+2. Indian region devastated by Cyclone Fengal (VIDEO)
+Cyclone Fengal hit several areas of southern India on Saturday, causing significant damage. The states of Tamil Nadu and Karnataka, as well as the Puducherry union territory, were among the affected regions.
+
+3. India: Several dead as cyclone Fengal brings heavy rainfall
+Cyclone Fengal has caused death and destruction in parts of southern India, leading to a red alert in northern Kerala. In response to the severe weather, schools in the city of Puducherry have been closed.
+
+
+You: translate in germany
+Message: ChatCompletionMessage(content='Es tut mir leid, aber ich glaube, es gab einen Fehler in Ihrer Anfrage. Meinten Sie, dass Sie die Informationen auf Deutsch übersetzt haben möchten? "Germany" ist ein Land, kein Sprache. Wenn Sie eine Übersetzung auf Deutsch wünschen, geben Sie bitte "Übersetze auf Deutsch" ein.', role='assistant', function_call=None, tool_calls=None, refusal=None)
+Chatbot: Es tut mir leid, aber ich glaube, es gab einen Fehler in Ihrer Anfrage. Meinten Sie, dass Sie die Informationen auf Deutsch übersetzt haben möchten? "Germany" ist ein Land, kein Sprache. Wenn Sie eine Übersetzung auf Deutsch wünschen, geben Sie bitte "Übersetze auf Deutsch" ein.
+You: Erhalten Sie die neuesten Nachrichten über Korea
+Message: ChatCompletionMessage(content=None, role='assistant', function_call=FunctionCall(arguments='{\n  "topic": "Korea",\n  "target_lang": "de"\n}', name='fetch_and_summarize'), tool_calls=None, refusal=None)
+
+Chatbot: Here are the latest articles about 'Korea':
+
+1. "Verbotenes" Lied verfolgt Südkoreas Universitätszulassungsprüfungsstudenten
+Südkorea beobachtet seine jährliche Phase der Stille, während sich eine halbe Million Schüler auf die wichtigste Prüfung des Landes vorbereiten. Dies beinhaltet das Grounding von Flugzeugen und das Stoppen von Bauarbeiten, um Lärm und Ablenkungen zu minimieren.
+
+2. Die Next-Gen-Batterien des Rivian R2 werden in den USA von LG Energy hergestellt.
+Rivian wird seine nächste Generation von Batterien für das R2-Modell in den USA in Partnerschaft mit LG Energy herstellen. Dies stellt eine Verlagerung der Zellenproduktion dar, von Südkorea in die Vereinigten Staaten.
+
+3. Russland und Nordkorea schwören, einander zu verteidigen
+Russland und Nordkorea haben jeweils einen gegenseitigen Verteidigungsvertrag ratifiziert, der sich verpflichtet, sich im Falle eines Angriffs zu verteidigen. Dieser Schritt könnte potenziell zu einer erhöhten Beteiligung der beiden Länder an internationalen Angelegenheiten führen.
+
+
+You: help
+
+Available Commands and Features:
+------------------------------
+1. Basic Commands:
+   - 'help': Show this help message
+   - 'trending': Show current trending topics
+   - 'exit': Quit the chatbot
+
+2. News Features:
+   - Ask for news about any topic
+   - Request news summaries
+   - Get trending topics
+   - Specify number of articles (e.g., "Show me 5 articles about tech")
+
+3. Translation:
+   - Chat in any language
+   - Request translations of news
+   - Switch between languages
+
+4. Weather:
+   - Get current weather for any city
+   - Choose metric/imperial units
+
+5. Financial Data:
+   - Get commodity prices
+   - Available commodities: Gold, Silver, Copper, Platinum, Palladium,
+     Crude Oil, Brent Crude, Natural Gas
+
+Example Commands:
+- "What's the latest news about AI?"
+- "Show me the weather in Tokyo"
+- "Get gold and silver prices"
+- "Translate the last response to Spanish"
+
+You: exit
+Goodbye!
